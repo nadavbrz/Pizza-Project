@@ -44,6 +44,7 @@ nav ul li a:hover {
     justify-content: center;
     width: 100%;
     padding: 20px;
+    background-color:tomato
 }
 
 .gallery-container h1 {
@@ -56,20 +57,20 @@ nav ul li a:hover {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
     width: 80%;
-    /* max-width: 1200px; */
+}
+.gallery-item:hover{
+    transform:scale(1.1);
 }
 
 .gallery-item {
     background-color: #fff;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* padding: 10px; */
     text-align: center;
     position: relative;
+    transition: 1s;
+    
+
     
 }
 
