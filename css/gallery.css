@@ -113,7 +113,7 @@ footer {
     padding: 10px;
     background-color: #333;
     color: #fff;
-    position: relative; /* Ensure footer is in its normal position */
+    position: relative;
     width: 100%;
-    clear: both; /* Clear floats and ensure content doesn't overlap */
+    clear: both; 
 }

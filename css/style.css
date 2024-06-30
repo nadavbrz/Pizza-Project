@@ -122,7 +122,6 @@ nav ul li a:hover {
 }
 .contact input:hover,
 .contact textarea:hover{
-  /* background-color: rgba(255, 255, 255, 0.505); */
   border-color: tomato;
 }
 .contact form {
@@ -140,11 +139,13 @@ nav ul li a:hover {
 }
 
 .contact .btn{
-    background-color: #555;
+    background-color: #ffffff;
+    color: rgb(3, 171, 3);
 }
 
 .contact .btn:hover {
-  background-color: rgb(3, 171, 3);
+  background-color:rgb(3, 171, 3) ;
+  color: white;
   cursor: pointer;
 }
 
