@@ -14,8 +14,9 @@
 // });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const h1 = document.querySelector("h1");
+  /// pizza emoji
 
+  const h1 = document.querySelector("h1");
   h1.addEventListener("mouseover", function () {
     h1.textContent += " 🍕 🍕";
   });
@@ -23,4 +24,17 @@ document.addEventListener("DOMContentLoaded", function () {
   h1.addEventListener("mouseout", function () {
     h1.textContent = h1.textContent.replace(" 🍕 🍕", "");
   });
+
+  /// border style when hover on img
+
+  const galleryItems = document.querySelectorAll(".gallery-item");
+  for (let i = 0; i < galleryItems.length; i++) {
+    let pic = galleryItems[i];
+    pic.addEventListener("mouseover", function () {
+      pic.style.border = "1px solid hsl(0, 0%, 60%)";
+    });
+    pic.addEventListener("mouseout", function () {
+      pic.style.border = "none";
+    });
+  }
 });

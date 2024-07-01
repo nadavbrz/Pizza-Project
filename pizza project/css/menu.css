@@ -1,5 +1,5 @@
 body {
-  background-image: url(/img/bcg4.jpg);
+  background-image: url(/img/bck2.jpg);
   background-size: cover;
 
   background-size: cover; /* Ensures the background image covers the entire container */
@@ -77,6 +77,8 @@ nav ul li a:hover {
 .starter_item-description,
 .pizza_item-description,
 .drinks_item_description {
+  font-style: italic;
+  font-weight: bold;
   font-size: 1.2em;
   color: black;
 }
