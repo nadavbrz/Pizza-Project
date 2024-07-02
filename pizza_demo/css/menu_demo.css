@@ -1,10 +1,11 @@
 body {
+  font-family: 'Open Sans', sans-serif;
   background-image: url(/img/bck2.jpg);
-  background-size: cover;
-
-  background-size: cover; /* Ensures the background image covers the entire container */
+  background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0;
+    padding: 0;
 }
 header {
   background-color: #333;
@@ -28,6 +29,8 @@ nav ul li {
   display: inline;
   margin-right: 20px;
   padding-left: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 nav ul li a {
@@ -44,34 +47,39 @@ nav ul li a:hover {
 
 
 .menu {
-  display: grid;
-  grid-template-rows: 100px 1fr 1fr 1fr;
-  text-align: center;
+  /* display: grid; */
+  /* grid-template-rows: 100px 1fr 1fr 1fr; */
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
 
-  height: 100%;
+  /* height: 70%; */
 }
 .menu_header {
   color: #711a1a;
-  margin-top: 65px;
+  font-family: 'Lobster', cursive;
+  text-align: center;
 }
 .starters_header,
 .pizzas_header,
 .drinks_header {
   color: #711a1a;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #711a1a;
 }
-.starters_header {
-  border-top: 5px black solid;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+
 .starter_item,
 .pizza_item,
 .drinks_item {
   color: #711a1a;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .starter_item-description,
@@ -79,12 +87,10 @@ nav ul li a:hover {
 .drinks_item_description {
   font-style: italic;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   color: black;
 }
-.price {
-  text-decoration: none;
-}
+
 
 .menu_header {
   grid-row: 1/2;
@@ -93,14 +99,12 @@ nav ul li a:hover {
 .starters {
   grid-row: 2/3;
   display: grid;
-  border-bottom: 5px solid black;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 
 .pizzas {
-  border-bottom: 5px solid black;
   grid-row: 3/4;
 }
 
