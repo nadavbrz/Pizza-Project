@@ -219,10 +219,32 @@ footer {
 }
 
 @media (max-height: 860px) {
-  .logoBoxLeft,
-  .logoBoxRight {
-    display: none; 
+  .logoBoxLeft {
+    top: 70%;
+    left: 30%;
   }
+  .logoBoxRight{
+    top: 70%;
+    right: 70%;
+  }
+}
+@media (max-height: 600px) {
+  .hero {
+    padding: 10px;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+ 
+  .menuBtn {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  .logoLeft, .logoRight {
+    width:60px;
+    height: 60px;
+  }
+
 }
 
 @media (max-width: 980px) {
