@@ -4,7 +4,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-image: url(/img/bcg4.jpg);
+  background-image: url(/img/pizzaback.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -105,10 +105,31 @@ nav ul li a:hover {
   border-radius: 5px;
   font-size: 12px;
 }
+.cul1{
+  animation-name:cul1Animation ;
+  animation-duration: 0.8s;
+}
+.cul2{
+  animation-name:cul2Animation ;
+  animation-duration: 0.8s;
+}
+.cul3{
+  animation-name:cul3Animation ;
+  animation-duration: 0.8s;
+}
 
-/* .gallery p:hover {
-    background-color: #dadada;
-} */
+@keyframes cul1Animation{
+  from{transform: translateX(-300%)}
+}
+@keyframes cul3Animation{
+  from{transform: translateX(300%)}
+}
+@keyframes cul2Animation{
+  from{transform: translateY(300%)}
+}
+
+
+
 
 footer {
   text-align: center;
