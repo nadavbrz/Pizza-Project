@@ -7,73 +7,148 @@
     <link rel="stylesheet" href="/pizza project/css/menu.css" />
   </head>
   <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/pizza project/html/index.html">Home</a></li>
-                <li><a href="/pizza project/html/about.html">About</a></li>
-                <li><a href="/pizza project/html/contact.html">Contact Us</a></li>
-                <li><a href="/pizza project/html/gallery.html">Gallery</a></li>
-                <li><a href="/pizza project/html/menu.html">Menu</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
-    <section class="menu">
-      <h1 class="menu_header">Mamma Mia Pizzeria</h1>
-      <section class="starters">
-        <h2 class="starters_header">Starters</h2>
-        <h4 class="starter_item">Caesar salad 🌾&nbsp;(9$)</h4>
-        <p class="starter_item-description">
-          Crisp romaine lettuce, crunchy croutons, and freshly grated Parmesan
-          cheese, all tossed in our house made Caesar dressing.
-        </p>
-        <h4 class="starter_item">Bruschetta&nbsp;(7$)</h4>
-        <p class="starter_item-description">
-          Toasted bread topped with diced tomatoes, fresh basil, garlic, and a
-          drizzle of balsamic glaze.
-        </p>
-        <h4 class="starter_item">Arancini&nbsp;(8$)</h4>
-        <p class="starter_item-description">
-          Crispy fried rice balls stuffed with mozzarella cheese, served with
-          marinara sauce.
-        </p>
-        <h4 class="starter_item">Garlic bread&nbsp;(6$)</h4>
-        <p class="starter_item-description">
-          Freshly baked bread brushed with garlic butter and sprinkled with
-          Parmesan cheese, served with a side of marinara sauce.
-        </p>
+      <section class="menu">
+        <h1 class="menu_header">Mamma Mia Pizzeria</h1>
+        <section class="starters">
+          <h2 class="starters_header">Starters</h2>
+          <h4 class="starter_item show-modal-caesar-salad">Caesar salad 🌾&nbsp;(9$)</h4>
+          <div class="modal modal-caesar-salad hidden">
+            <h3 class="modal-header">Caesar salad</h3>
+            <button class="close-modal">&times;</button>
+            <img src="/img/ceaser.png" alt="ceasar salad">
+        </div>
+          <p class="starter_item-description">
+            Crisp romaine lettuce, crunchy croutons, and freshly grated Parmesan
+            cheese, all tossed in our house made Caesar dressing.
+          </p>
+          <h4 class="starter_item show-modal-bruschetta">Bruschetta&nbsp;(7$)</h4>
+          <div class="modal modal-bruschetta hidden">
+            <h3 class="modal-header">Bruschetta</h3>
+            <button class="close-modal">&times;</button>
+            <img src="/img/bruschetta.jpg" alt="bruschetta">
+        </div>
+          
+          <p class="starter_item-description">
+            Toasted bread topped with diced tomatoes, fresh basil, garlic, and a
+            drizzle of balsamic glaze.
+          </p>
+          <h4 class="starter_item show-modal-arancini">Arancini&nbsp;(8$)</h4>
+          <div class="modal modal-arancini hidden">
+            <h3 class="modal-header">Arancini</h3>
+            <button class="close-modal">&times;</button>
+            <img src="/img/arancini.png" alt="Arancini">
+        </div>
+          <p class="starter_item-description">
+            Crispy fried rice balls stuffed with mozzarella cheese, served with
+            marinara sauce.
+          </p>
+          <h4 class="starter_item show-modal-garlic-bread">Garlic bread&nbsp;(6$)</h4>
+          <div class="modal modal-garlic-bread hidden">
+            <h3 class="modal-header">Garlic bread</h3>
+            <button class="close-modal">&times;</button>
+            <img src="/img/garlic-bread.png" alt="garlic bread">
+        </div>
+          <p class="starter_item-description">
+            Freshly baked bread brushed with garlic butter and sprinkled with
+            Parmesan cheese, served with a side of marinara sauce.
+          </p>
+        </section>
+        <section class="pizzas">
+          <h2 class="pizzas_header">Pizza</h4>
+          <h4 class="pizza_item show-modal-bacon">Bacon pizza&nbsp;(13$)</h4>
+          <div class="modal modal-bacon hidden">
+            <h3 class="modal-header">Bacon pizza</h3>
+              <button class="close-modal">&times;</button>
+              <img src="/img/bacon.png" alt="bacon pizza">
+          </div>
+          <p class="pizza_item-description">crispy bacon paired with melted mozzarella cheese and tangy tomato sauce</p>
+          <h4 class="pizza_item show-modal-classic">Classic pizza&nbsp;(10$)</h4>
+          <div class="modal modal-classic hidden">
+            <h3 class="modal-header">Classic pizza</h3>
+              <button class="close-modal">&times;</button>
+              <img src="/img/classic.png" alt="classic pizza">
+          </div>
+          <p class="pizza_item-description">Our traditional pizza featuring a perfect harmony of tangy tomato sauce, gooey mozzarella cheese, and your choice of classic toppings</p>
+          <h4 class="pizza_item show-modal-four-cheese">Four cheese pizza&nbsp;(12$)</h4>
+          <div class="modal modal-four-cheese hidden">
+            <h3 class="modal-header">Four cheese pizza</h3>
+              <button class="close-modal">&times;</button>
+              <img src="/img/fourCheese.png" alt="four cheese pizza">
+          </div>
+          <p class="pizza_item-description">A delightful blend of mozzarella, parmesan, gorgonzola, and asiago cheeses atop our signature tomato sauce</p>
+          <h4 class="pizza_item show-modal-margarita">Margarita pizza&nbsp;(10$)</h4>
+          <div class="modal modal-margarita hidden">
+            <h3 class="modal-header">Margarita pizza</h3>
+              <button class="close-modal">&times;</button>
+              <img src="/img/margarita.png" alt="margarita pizza">
+          </div>
+          <p class="pizza_item-description">A traditional favorite with fresh tomato sauce, mozzarella cheese, and basil leaves, baked to perfection</p>
+          <h4 class="pizza_item show-modal-olives">Olives pizza&nbsp;(11$)</h4>
+          <div class="modal modal-olives hidden">
+            <h3 class="modal-header">Olives pizza</h3>
+              <button class="close-modal">&times;</button>
+              <img src="/img/olives.png" alt="olives pizza">
+          </div>
+          <p class="pizza_item-description">Mozzarella cheese topped with Kalamata and green olives, seasoned with oregano.</p>
+          <h4 class="pizza_item show-modal-pepperoni">Pepperoni pizza🌶️&nbsp;(12$)</h4>
+          <div class="modal modal-pepperoni hidden">
+            <h3 class="modal-header">Pepperoni pizza</h3>
+              <button class="close-modal">&times;</button>
+              <img src="/img/pepperoni.png" alt="pepperoni pizza">
+          </div>
+          <p class="pizza_item-description">Classic pizza topped generously with spicy pepperoni slices and mozzarella cheese.</p>
+          <h4 class="pizza_item show-modal-vegan">Vegan🍅&nbsp;(12$)</h4>
+          <div class="modal modal-vegan hidden">
+            <h3 class="modal-header">Vegan pizza</h3>
+              <button class="close-modal">&times;</button>
+              <img src="/img/vegan.png" alt="vegan pizza">
+          </div>
+          <p class="pizza_item-description">fresh vegetables, vegan cheese, and robust marinara sauce</p>
+        </section>
+        <section class="drinks">
+          <h2 class="drinks_header">Drinks</h2>
+          <h4 class="drinks_item show-modal-soda">sparkling soda(3$)</h4>
+          <div class="modal modal-soda hidden">
+            <h3 class="modal-header">sparkling soda</h3>
+              <button class="close-modal">&times;</button>
+              <img src="/img/soda.png" alt="sparkling soda">
+          </div>
+          <h4 class="drinks_item show-modal-wine">House wine&nbsp;(6$/glass)</h4>
+          <div class="modal modal-wine hidden">
+            <h3 class="modal-header">House wine</h3>
+            <button class="close-modal">&times;</button>
+              <img src="/img/wineGlass.png" alt="House wine">
+          </div>
+          <p class="drinks_item_description">a glass of our red/white wine</p>
+          <h4 class="drinks_item show-modal-beer">Peroni Beer&nbsp;(5$/bottle)</h4>
+          <div class="modal modal-beer hidden">
+            <h3 class="modal-header">Peroni Beer</h3>
+              <button class="close-modal">&times;</button>
+              <img src="/img/peroni.png" alt="Peroni Beer">
+          </div>
+          <p class="drinks_item_description">A  light Italian lager</p>
+          <h4 class="drinks_item show-modal-water">Miniral water&nbsp;(3$)</h4>
+          <div class="modal modal-water hidden">
+            <h3 class="modal-header">Miniral water</h3>
+              <button class="close-modal">&times;</button>
+              <img src="/img/water.png" alt="Miniral water">
+          </div>
+          <h4 class="drinks_item show-modal-cola">Coca-Cola/zero&nbsp;(3.5$)</h4>
+          <div class="modal modal-cola hidden">
+            <h3 class="modal-header">Coca-Cola/zero</h3>
+              <button class="close-modal">&times;</button>
+              <img src="/img/cola.png" alt="Coca-Cola/zero">
+          </div>
+          <h4 class="drinks_item show-modal-sprite">Sprite&nbsp;(3.5$)</h4>
+          <div class="modal modal-sprite hidden">
+            <h3 class="modal-header">Sprite</h3>
+              <button class="close-modal">&times;</button>
+              <img src="/img/sprite.png" alt="Sprite">
+          </div>
+        </section>
       </section>
-      <section class="pizzas">
-        <h2 class="pizzas_header">Pizza</h2>
-        <h4 class="pizza_item">Bacon pizza&nbsp;(13$)</h4>
-        <p class="pizza_item-description">crispy bacon paired with melted mozzarella cheese and tangy tomato sauce</p>
-        <h4 class="pizza_item">Classic pizza&nbsp;(10$)</h4>
-        <p class="pizza_item-description">Our traditional pizza featuring a perfect harmony of tangy tomato sauce, gooey mozzarella cheese, and your choice of classic toppings</p>
-        <h4 class="pizza_item">Four cheese pizza&nbsp;(12$)</h4>
-        <p class="pizza_item-description">A delightful blend of mozzarella, parmesan, gorgonzola, and asiago cheeses atop our signature tomato sauce</p>
-        <h4 class="pizza_item">Margarita pizza&nbsp;(10$)</h4>
-        <p class="pizza_item-description">A traditional favorite with fresh tomato sauce, mozzarella cheese, and basil leaves, baked to perfection</p>
-        <h4 class="pizza_item">Olives pizza&nbsp;(11$)</h4>
-        <p class="pizza_item-description">Mozzarella cheese topped with Kalamata and green olives, seasoned with oregano.</p>
-        <h4 class="pizza_item">Pepperoni pizza🌶️&nbsp;(12$)</h4>
-        <p class="pizza_item-description">Classic pizza topped generously with spicy pepperoni slices and mozzarella cheese.</p>
-        <h4 class="pizza_item">Vegan🍅&nbsp;(12$)</h4>
-        <p class="pizza_item-description">fresh vegetables, vegan cheese, and robust marinara sauce</p>
-      </section>
-      <section class="drinks">
-        <h2 class="drinks_header">Drinks</h2>
-        <h4 class="drinks_item">Soda(3$)</h4>
-        <h4 class="drinks_item">House wine&nbsp;(6$/glass)</h4>
-        <p class="drinks_item_description">a glass of our red/white wine</p>
-        <h4 class="drinks_item">Peroni Beer&nbsp;(5$/bottle)</h4>
-        <p class="drinks_item_description">A  light Italian lager</p>
-        <h4 class="drinks_item">Miniral water&nbsp;(3$)</h4>
-        <h4 class="drinks_item">Coca-Cola/zero&nbsp;(3.5$)</h4>
-        <h4 class="drinks_item">Sprite&nbsp;(3.5$)</h4>
-      </section>
-    </section>
     </main>
-    <script src="/pizza project/js/script.js"></script>
+    <div class="overlay hidden"></div>    <script src="/pizza project/js/script.js"></script>
   </body>
 </html>
