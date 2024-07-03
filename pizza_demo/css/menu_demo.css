@@ -108,6 +108,8 @@ nav ul li a:hover {
 }
 .modal-header {
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 25px;
 }
 
 .modal {
@@ -122,10 +124,13 @@ nav ul li a:hover {
   z-index: 10;
   animation-name: modalFromRight;
   animation-duration: 0.8s;
+  height: 400px;
+  width: 400px;
+  
 }
 .modal img {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 350px;
 }
 
 .overlay {
@@ -141,7 +146,7 @@ nav ul li a:hover {
 
 .close-modal {
   position: absolute;
-  top: -8%;
+  top: -7%;
   right: -3%;
   font-size: 5rem;
   color: #333;
