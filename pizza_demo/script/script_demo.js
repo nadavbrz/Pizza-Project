@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let i = 0; i < galleryItems.length; i++) {
     let pic = galleryItems[i];
     pic.addEventListener("mouseover", function () {
-      pic.style.border = "1px solid hsl(0, 0%, 60%)";
+      pic.style.border = "1px solid hsl(0, 0%, 10%)";
     });
     pic.addEventListener("mouseout", function () {
       pic.style.border = "none";

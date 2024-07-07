@@ -20,7 +20,6 @@ header {
   padding: 10px 0;
 }
 
-
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -51,7 +50,6 @@ nav ul li a:hover {
   padding: 50px;
   background: rgba(0, 0, 0, 0.8);
   margin-top: 50px;
-
 }
 .hero h1 {
   font-size: 3em;
@@ -62,10 +60,11 @@ nav ul li a:hover {
   animation-duration: 1s;
 }
 
-@keyframes fromTop{
-from{transform: translateY(-300%)}
+@keyframes fromTop {
+  from {
+    transform: translateY(-300%);
+  }
 }
-
 
 .intro {
   font-size: 1.2em;
@@ -83,15 +82,23 @@ from{transform: translateY(-300%)}
   border-radius: 5px;
 }
 .menuBtn:hover {
-  background-color: #d2d2d2;
+  background-color: rgb(255, 99, 71);
+  color: white;
   border-radius: 10px;
 }
 
 /* about page */
 
+.about_body {
+  background-image: url(/img/old1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .about {
-  background: rgba(0, 0, 0, 0.8);
-  margin: 30px;
+  background: rgba(255, 255, 255, 0.9);
   text-align: center;
   font-weight: bold;
   font-size: larger;
@@ -100,14 +107,23 @@ from{transform: translateY(-300%)}
 }
 .about h1 {
   font-size: 2em;
-  color: tomato;
+  color: #ff6347;
+  font-weight: bold;
   text-decoration: underline;
   animation-name: fromTop;
   animation-duration: 1s;
 }
-.about p {
-  font-size: 1.2em;
-  color: #ddd;
+.about_us {
+  font-size: 1.8em;
+  /* color:  #444; */
+  color:  #000000;
+  font-family: Goudy Old Style; 
+}
+
+
+.since_img {
+  height: 150px;
+  border-radius: 50%;
 }
 
 /* contact page */
@@ -163,7 +179,6 @@ from{transform: translateY(-300%)}
   cursor: pointer;
 }
 
-
 .btn {
   display: inline-block;
   background-color: #333;
@@ -189,24 +204,24 @@ footer {
   width: 100%;
 }
 
-
-.logoBoxRight{
+.logoBoxRight {
   height: 80px;
   position: fixed;
   /* position: absolute; */
   top: 45%;
   left: 70%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.logoBoxLeft{
+.logoBoxLeft {
   height: 80px;
   position: fixed;
   /* position: absolute; */
   top: 45%;
   left: 30%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.logoRight,.logoLeft{
+.logoRight,
+.logoLeft {
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -214,8 +229,10 @@ footer {
   animation-duration: 2s;
   animation-iteration-count: 5;
 }
-@keyframes rotate{
-  from{transform: rotateZ(360deg);}
+@keyframes rotate {
+  from {
+    transform: rotateZ(360deg);
+  }
 }
 
 @media (max-height: 860px) {
@@ -223,7 +240,7 @@ footer {
     top: 70%;
     left: 30%;
   }
-  .logoBoxRight{
+  .logoBoxRight {
     top: 70%;
     right: 70%;
   }
@@ -235,33 +252,33 @@ footer {
   .hero h1 {
     font-size: 1.5rem;
   }
- 
+
   .menuBtn {
     font-size: 1rem;
     padding: 5px 10px;
   }
-  .logoLeft, .logoRight {
-    width:60px;
+  .logoLeft,
+  .logoRight {
+    width: 60px;
     height: 60px;
   }
-
 }
 
 @media (max-width: 980px) {
   .logoBoxLeft {
-    top: 60%; 
-    left: 20%; 
+    top: 60%;
+    left: 20%;
   }
-  
+
   .logoBoxRight {
-    top: 60%; 
-    left: 80%; 
+    top: 60%;
+    left: 80%;
   }
 
   .logoLeft,
   .logoRight {
-    width: 80px; 
-    height: 80px; 
+    width: 80px;
+    height: 80px;
   }
 }
 @media (max-width: 660px) {
@@ -270,23 +287,21 @@ footer {
   }
 
   .logoBoxLeft {
-    top: 65%; 
-    left: 15%; 
+    top: 65%;
+    left: 15%;
   }
-  
+
   .logoBoxRight {
-    top: 65%; 
-    left: 85%; 
+    top: 65%;
+    left: 85%;
   }
 
   .logoLeft,
   .logoRight {
-    width: 60px; 
-    height: 60px; 
+    width: 60px;
+    height: 60px;
   }
-
 }
-
 
 @media (max-width: 500px) {
   footer {
@@ -316,20 +331,20 @@ footer {
   .menuBtn {
     font-size: 0.8em;
   }
-  .logoRight{
+  .logoRight {
     height: 60px;
     width: 60px;
   }
-  .logoLeft{
+  .logoLeft {
     height: 60px;
     width: 60px;
   }
-  .logoBoxLeft{
-    top: 55%; 
+  .logoBoxLeft {
+    top: 55%;
     left: 15%;
   }
-  .logoBoxRight{
-    top: 55%; 
+  .logoBoxRight {
+    top: 55%;
     left: 85%;
   }
 }
@@ -337,10 +352,10 @@ footer {
   .contact label {
     font-size: 0.8em;
   }
-  .logoBoxLeft{
-display: none;
+  .logoBoxLeft {
+    display: none;
   }
-  .logoBoxRight{
+  .logoBoxRight {
     display: none;
   }
 }
