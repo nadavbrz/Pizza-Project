@@ -49,7 +49,7 @@ nav ul li a:hover {
   text-align: center;
   padding: 50px;
   background: rgba(0, 0, 0, 0.8);
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 .hero h1 {
   font-size: 3em;
@@ -103,7 +103,6 @@ nav ul li a:hover {
   font-weight: bold;
   font-size: larger;
   border-radius: 20px;
-  padding-bottom: 30px;
 }
 .about h1 {
   font-size: 2em;
@@ -132,7 +131,6 @@ nav ul li a:hover {
   text-align: center;
   padding: 50px;
   background: rgba(0, 0, 0, 0.8);
-  margin-top: 50px;
   border-radius: 10px;
 }
 .contact h1 {
@@ -236,6 +234,12 @@ footer {
 }
 
 @media (max-height: 860px) {
+  .about .about_us{
+    font-size: 1.2em;
+  }
+  .about .since_img{
+    height: 100px;
+  }
   .logoBoxLeft {
     top: 70%;
     left: 30%;
