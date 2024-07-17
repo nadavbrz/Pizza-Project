@@ -52,6 +52,7 @@ nav ul li a:hover {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 800px;
+  margin-bottom: 80px;
 
   /* height: 70%; */
 }
@@ -146,8 +147,8 @@ nav ul li a:hover {
 
 .close-modal {
   position: absolute;
-  top: -7%;
-  right: -3%;
+  top: -6%;
+  right: -2%;
   font-size: 5rem;
   color: #333;
   cursor: pointer;
@@ -156,6 +157,15 @@ nav ul li a:hover {
 }
 .close-modal:hover {
   color: grey;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 @keyframes modalFromRight {
@@ -218,5 +228,10 @@ nav ul li a:hover {
   nav ul li a {
     font-size: 0.8em;
     padding: 6px;
+  }
+  footer {
+    font-size: 0.8em;
+    padding: 0px;
+    margin-top: 40px;
   }
 }
